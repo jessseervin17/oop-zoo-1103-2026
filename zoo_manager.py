@@ -25,3 +25,29 @@ class Reptile(Animal):
     def bask_in_sun(self):
         return f"{self.name} the {self.species} is basking in the sun"
 
+class Primate(Mammal):
+    def __init__(self, name, species):
+        super().__init__(name, species)
+    
+    def climb_trees(self):
+        return f"{self.name} the {self.species} is climbing trees"
+
+class Marsupial(Mammal):
+    def __init__(self, name, species):
+        super().__init__(name, species)
+    
+    def carry_baby(self):
+        return f"{self.name} the {self.species} is carrying its baby"
+
+class Aviary:
+    def __init__(self):
+        self.birds=[]
+    
+    def add_a_bird(self):
+        self.birds.append(self)
+
+class ReptileEnclosure:
+    
+    def __init__(self):
+        self.reptiles=[]
+    
